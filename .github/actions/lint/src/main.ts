@@ -1,4 +1,4 @@
-import {AsyncFunctionArguments} from "@actions/github-script";
+import type {AsyncFunctionArguments} from '@actions/github-script'
 
 import {CatalogInfoFile} from "./catalog-info";
 
