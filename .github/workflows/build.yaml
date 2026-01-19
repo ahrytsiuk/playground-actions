@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v8
+        env:
+          TITLE: 'Hello World'
+        with:
+          script: |
+            const title = process.env.TITLE;
+            if (title.startsWith('octocat')) {
+              console.log("Title starts with 'octocat'");
+            } else {
+              console.error("Title did not start with 'octocat'");
+            }
