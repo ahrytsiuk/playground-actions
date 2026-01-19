@@ -1,8 +1,8 @@
 {
   "extends": "ts-node/node16/tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2024",
+    "module": "ES2022",
+    "target": "ES2022",
     "lib": ["esnext"]
   },
   "ts-node": {
