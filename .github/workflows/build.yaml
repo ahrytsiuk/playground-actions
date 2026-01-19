@@ -17,6 +17,7 @@ jobs:
           TITLE: 'Hello World'
         with:
           script: |
-            const script = require('${{ github.workspace }}/.github/workflows/scripts/index.js');
+            const script = await import('${{ github.workspace }}/.github/workflows/scripts/main.ts');
+            
             return await script();
             
