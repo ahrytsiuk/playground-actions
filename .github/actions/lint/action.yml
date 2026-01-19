@@ -8,5 +8,5 @@ runs:
       uses: actions/github-script@v8
       with:
         script: |
-          const { main: script } = await import('${{ github.action_path }}/src/index.js');
+          const { main: script } = await import('${{ github.action_path }}/src/index.ts');
           return await script();
