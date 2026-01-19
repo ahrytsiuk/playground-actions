@@ -1,5 +1,5 @@
-name: "Download Commercial Release JSON"
-description: "Downloads the commercial-release.json from the topstack repository."
+name: "Lint Action"
+description: "Runs linting checks on the codebase."
 
 runs:
   using: "composite"
