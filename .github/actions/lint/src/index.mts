@@ -16,4 +16,11 @@ export async function main({core, github}: AsyncFunctionArguments): Promise<void
 
   console.log(JSON.stringify(core));
   console.log(JSON.stringify(github));
+
+  core.warning(`Sample warning from main.ts`);
+  core.error(`Sample error from main.ts`);
+
+  core.startGroup(`Sample Group`);
+  core.info(`This is inside a group.`);
+  core.endGroup();
 }
