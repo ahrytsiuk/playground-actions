@@ -2,8 +2,12 @@ import * as fs from 'fs';
 
 import type {AsyncFunctionArguments} from '@actions/github-script'
 
-interface Message {
+export interface Message {
   text: string;
+}
+
+export function readContent(filePath: string): string {
+  return fs.readFileSync(filePath, 'utf-8');
 }
 
 export async function main({core, github}: AsyncFunctionArguments): Promise<void>{

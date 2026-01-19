@@ -8,7 +8,7 @@ runs:
       uses: actions/github-script@v8
       with:
         script: |
-          const {main} = await import('${{ github.action_path }}/src/index.mts');
+          const {main} = await import('${{ github.action_path }}/src/index.ts');
           
           console.log(typeof main);
           console.log(JSON.stringify(main));
