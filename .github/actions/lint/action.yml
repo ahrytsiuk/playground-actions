@@ -8,9 +8,9 @@ runs:
       uses: actions/github-script@v8
       with:
         script: |
-          const script = await import('${{ github.action_path }}/src/index.mts');
+          const {main} = await import('${{ github.action_path }}/src/index.mts');
           
           console.log(typeof script);
           console.log(JSON.stringify(script));
           
-          return await script({core, github});
+          return await main({core, github});
