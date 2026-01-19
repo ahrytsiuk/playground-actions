@@ -8,4 +8,5 @@ runs:
       uses: actions/github-script@v8
       with:
         script: |
-          console.log("This is a simple action without inputs or outputs.")
+          const script = require('${{ github.action_path }}/src/index.js');
+          return await script();
