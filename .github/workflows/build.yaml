@@ -15,9 +15,6 @@ jobs:
           TITLE: 'Hello World'
         with:
           script: |
-            const title = process.env.TITLE;
-            if (title.startsWith('octocat')) {
-              console.log("Title starts with 'octocat'");
-            } else {
-              console.error("Title did not start with 'octocat'");
-            }
+            const script = require('${{ github.workspace }}/.github/workflows/scripts/index.js');
+            return await script();
+            
