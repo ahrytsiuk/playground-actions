@@ -1,6 +1,6 @@
 import type {AsyncFunctionArguments} from '@actions/github-script'
 
-import {CatalogInfoFile} from "./catalog-info";
+import {CatalogInfoFile} from "./catalog-info.ts";
 
 /**
  * Gets the workspace path from environment variable.

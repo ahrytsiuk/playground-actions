@@ -3,7 +3,8 @@
   "compilerOptions": {
     "module": "ES2022",
     "target": "ES2022",
-    "lib": ["esnext"]
+    "lib": ["esnext"],
+    "allowImportingTsExtensions": true
   },
   "ts-node": {
     "transpileOnly": true,     // Faster: skips type-checking during execution
