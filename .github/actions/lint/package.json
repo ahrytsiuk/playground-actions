@@ -4,7 +4,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@actions/core": "^2.0.2"
+    "@actions/core": "^2.0.2",
+    "@octokit/rest": "^22.0.1"
   },
   "devDependencies": {
     "@jest/globals": "^30.2.0",
