@@ -19,5 +19,5 @@ jobs:
           script: |
             const script = await import('${{ github.workspace }}/.github/workflows/scripts/main.ts');
             
-            return await script.main();
+            return await script();
             
