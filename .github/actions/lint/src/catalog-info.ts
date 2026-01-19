@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 
 const CATALOG_INFO_GLOB: string = '**/*catalog-info*.yaml';
 
-export class CatalogInfoFile {
+export default class CatalogInfoFile {
 
   public readonly filepath: string;
 
