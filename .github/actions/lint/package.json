@@ -8,6 +8,7 @@
     "@octokit/rest": "^22.0.1"
   },
   "devDependencies": {
+    "@actions/github-script": "github:actions/github-script",
     "@jest/globals": "^30.2.0",
     "@types/node": "^25.0.9",
     "jest": "^30.2.0",

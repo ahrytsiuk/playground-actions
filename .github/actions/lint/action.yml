@@ -9,4 +9,4 @@ runs:
       with:
         script: |
           const { main: script } = await import('${{ github.action_path }}/src/index.mts');
-          return await script();
+          return await script({core, github});
