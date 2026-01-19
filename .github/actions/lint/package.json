@@ -3,6 +3,9 @@
   "scripts": {
     "test": "jest"
   },
+  "dependencies": {
+    "@actions/core": "^2.0.2"
+  },
   "devDependencies": {
     "@jest/globals": "^30.2.0",
     "@types/node": "^25.0.9",
