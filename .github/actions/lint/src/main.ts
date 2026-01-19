@@ -21,7 +21,7 @@ function getWorkspacePath(): string {
   return workspace;
 }
 
-export async function main({core}: AsyncFunctionArguments): Promise<void> {
+export async function main({core}: AsyncFunctionArguments): Promise<void>{
 
   const workspace = getWorkspacePath();
   core.info(`Linting OpenAPI specifications in: ${workspace}`);
