@@ -1,8 +1,7 @@
 {
   "extends": "ts-node/node16/tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "lib": ["esnext"]
+    "module": "CommonJS"
   },
   "ts-node": {
     "transpileOnly": true,     // Faster: skips type-checking during execution
