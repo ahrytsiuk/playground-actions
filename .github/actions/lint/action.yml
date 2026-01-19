@@ -1,0 +1,11 @@
+name: "Download Commercial Release JSON"
+description: "Downloads the commercial-release.json from the topstack repository."
+
+runs:
+  using: "composite"
+  steps:
+    - name: Simple action
+      uses: actions/github-script@v8
+      with:
+        script: |
+          console.log("This is a simple action without inputs or outputs.")
