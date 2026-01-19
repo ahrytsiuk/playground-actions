@@ -9,4 +9,7 @@ runs:
       with:
         script: |
           const script = await import('${{ github.action_path }}/src/index.mts');
+          
+          console.log(typeof script);
+          
           return await script({core, github});
