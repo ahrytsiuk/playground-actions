@@ -10,6 +10,11 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - uses: sdkman/sdkman-action@v1
+        id: sdkman
+        with:
+          candidate: java
+          version: 15.0.0-amzn
       - uses: actions/checkout@v6
 
       - uses: ./.github/actions/lint
